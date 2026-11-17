@@ -6,51 +6,37 @@ https://hub.docker.com/repository/docker/joeybreat/custom-nginx
 
 ### Задание 2
 
-img1.png
+![img1.png](https://github.com/urod2002/docker-1/blob/main/img/img1.png?raw=true)
 
 ### Задание 3
 
-img2
+![img2.png](https://github.com/urod2002/docker-1/blob/main/img/img2.png?raw=true)
 
-img3
+![img3.png](https://github.com/urod2002/docker-1/blob/main/img/img3.png?raw=true)
 
-img4
+![img4.png](https://github.com/urod2002/docker-1/blob/main/img/img4.png?raw=true)
 
 ### Задание 4
 
-img5
+![img5.png](https://github.com/urod2002/docker-1/blob/main/img/img5.png?raw=true)
 
 ### Задание 5
 
-1) Был запущен compose.yaml т.к. он является предпочтительным файлом по умолчанию. docker-compose.yamlи docker-compose.yml поддерживаются лишь для обратной совместимости
+1. Был запущен compose.yaml т.к. он является предпочтительным файлом по умолчанию. docker-compose.yaml и docker-compose.yml поддерживаются лишь для обратной совместимости
 
-2) include позволяет интегрировать отдельный compose.yaml файл в свой текущий compose.yaml. compose.yaml:
+2. include позволяет интегрировать отдельный compose.yaml файл в свой текущий compose.yaml.
 
-   `include:`
+   ![img6.png](https://github.com/urod2002/docker-1/blob/main/img/img6.png?raw=true)
 
-   `- docker-compose.yaml`
+3. ![img7.png](https://github.com/urod2002/docker-1/blob/main/img/img7.png?raw=true)
 
-   `services:`
-     `portainer:`
-       `image: portainer/portainer-ce:lts`
-       `ports:`
-         `- "127.0.0.1:9443:9443"`
-       `volumes:`
-         `- /var/run/docker.sock:/var/run/docker.sock`
-         `- portainer_data:/data`
+4. ![img8.png](https://github.com/urod2002/docker-1/blob/main/img/img8.png?raw=true)
 
-   `volumes:`
-     `portainer_data:`
+5. ![img9.png](https://github.com/urod2002/docker-1/blob/main/img/img9.png?raw=true)
+   ![img10.png](https://github.com/urod2002/docker-1/blob/main/img/img10.png?raw=true)
+   ![img11.png](https://github.com/urod2002/docker-1/blob/main/img/img11.png?raw=true)
 
-   img6
+6. ![img12.png](https://github.com/urod2002/docker-1/blob/main/img/img12.png?raw=true)
 
-3) img7
-
-4) img8
-
-5) img9-11
-
-6) img12
-
-7) img13
+7. ![img13.png](https://github.com/urod2002/docker-1/blob/main/img/img13.png?raw=true)
 
