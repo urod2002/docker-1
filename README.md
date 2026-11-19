@@ -10,9 +10,13 @@ https://hub.docker.com/repository/docker/joeybreat/custom-nginx
 
 ### Задание 3
 
+Ctrl+C отправил сигнал прерывания основному процессу nginx, который завершился, вследствие чего Docker остановил контейнер.
+
 ![img2.png](https://github.com/urod2002/docker-1/blob/main/img/img2.png?raw=true)
 
 ![img3.png](https://github.com/urod2002/docker-1/blob/main/img/img3.png?raw=true)
+
+Docker продолжал перенаправлять 127.0.0.1:8080 на порт 80 контейнера, хотя nginx уже слушал порт 81.
 
 ![img4.png](https://github.com/urod2002/docker-1/blob/main/img/img4.png?raw=true)
 
@@ -39,4 +43,10 @@ https://hub.docker.com/repository/docker/joeybreat/custom-nginx
 6. ![img12.png](https://github.com/urod2002/docker-1/blob/main/img/img12.png?raw=true)
 
 7. ![img13.png](https://github.com/urod2002/docker-1/blob/main/img/img13.png?raw=true)
+
+   После переименования compose.yaml остался docker-compose.yaml, в котором описан только registry.
+   Но контейнер Portainer продолжал существовать. Docker Compose обнаружил контейнер, принадлежащий текущему проекту, но больше не описанный в его конфигурации. Такие контейнеры называются orhpan - осиротевшие.
+   Docker Compose предложил удалить orphans контейнеры с помощью добавления флага --remove-orphans.
+
+   ![img14.png](https://github.com/urod2002/docker-1/blob/main/img/img14.png?raw=true)
 
